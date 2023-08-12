@@ -1,0 +1,518 @@
+*{
+    padding: '0';
+    margin: '0';
+    box-sizing: 'border-box';
+}
+body{
+    font-family: "poppins", sans-serif;
+    background-image: url(images/sea3.jpg);
+}
+h1, h2{
+    font-weight: 400;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transform: 0.5s;
+    cursor:pointer;
+}
+.primary-btn{
+    padding: 15px 40px;
+    background: #7fc142;
+    font-weight: bold;
+    color: white;
+}
+.secondary-btn{
+    padding: 15px 40px;
+    background: none;
+    border: 5px solid;
+    font-weight: bold;
+    color: white;
+}
+
+/* ----------header----------- */
+
+header{
+    padding: 0 40px;
+    height: 10vh;
+    line-height: 10vh;
+    background: whitesmoke;
+}
+header img{
+   position: relative;
+   right: 40px;
+   bottom: 30px;
+}
+header i{
+    margin: 0 20px;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 800;
+    position: relative;
+    bottom: 14px;
+    left: 0%;
+    color: #000;
+}
+header h1 span{
+    color: #7fc142;
+}
+header button{
+    position: relative;
+    bottom: 22px;
+    left: 40%;
+}
+
+@media screen and (max-width: 768px){
+body{
+    width: 100%;
+}
+header{
+    height: 8vh;
+    line-height: 20vh;
+}header img{
+    height: 10vh;
+    bottom: 70px;
+}
+ header button{
+    bottom: 80px;
+    left: 40px;
+}
+ header h1{
+    font-size: 40px;
+    left: -2%;
+    bottom: 65px;
+}
+ header .icon{
+    left: 10%;
+    bottom: 50px;
+}
+}
+
+/* --------------home------------ */
+
+.home{
+    height: 100vh;
+    color: white;
+    width: 100%;
+}
+.home img{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    top: 0px;
+}
+.home .text{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.home .text h1{
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.home p{
+    margin: 20px 0;
+}
+.home button{
+    margin-right: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 0 60px;
+    position: relative;
+    left: 20%;
+}
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.book{
+    background: #282834;
+    color: white;
+    position: relative;
+    bottom: 40px;
+    padding: 50px 0;
+}
+.book .text h1{
+    font-size: 28px;
+    position: relative;
+    left: 5%;
+    bottom: 25px;
+}
+.book .text h1 span{
+    color: #7fc142;
+    font-size: 50px;
+}
+.grid .show
+{
+    background-color: #fff;
+    color: #0002
+}
+.book input{
+    padding: 20px;
+}
+.book input:nth-last-child(1){
+    background: #7fc142;
+    color:white;
+}
+
+
+
+.selectionguest{
+    width: 40%;
+    height: 40vh;
+    background-color: #7fc142;
+    color: #fff;
+    position: relative;
+    left: 115%;
+    top: -220px;
+    display: none;
+}
+.selectionguest button{
+    display: grid;
+}
+.selectionguest span{
+    background-color: #000;
+}
+.opt{
+    width: 80%;
+    height: 2vh;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    left: 5%;
+    font-size: 15px;
+}
+.timeslot{
+    display: none;
+    position: relative;
+    left: 70%;
+    top: -320px;
+    height: 50vh;
+    padding: 10px;
+    width: 40%;
+}
+.timeslot .normal{
+    padding: 5px;
+    margin: 4px;
+    background-color: #7fc142;
+}
+.timeslot .peak{
+    background-color: #e76e0b;
+    padding: 5px;
+    margin: 4px;
+}
+.timeslot .checkbox{
+    width: 10px;
+    height: 10px;
+}
+.okay{
+    width: 40%;
+    height: 5vh;
+    background-color: #7fc142;  
+    position: relative;
+    left: 70%;
+    top: -320px;
+    display: none;
+}
+.dutcount{
+    display: flex;
+}
+
+.delete img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+.home {
+        height: 50vh;
+        width: 100%;
+}
+.home .text{
+       font-size: 15px; 
+}
+.home .text h1{
+    font-size: 40px;
+}
+.home img{
+    height: 50vh;
+}
+.book{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    bottom: 100px;
+}
+.book form{
+   position: relative;
+   top: 130px;
+   left: -1px;
+}
+.book .text h1{
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+    bottom: 100px;
+}
+.grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+
+/* --------------summary------------ */
+.summary{
+    width: 100%;
+    height: 120vh;
+    background-color:#282834;
+}
+
+/*------------------------------------------------------*/
+.card2{
+    width: 30%;
+    height: 110vh;
+    position: relative;
+    color: #000;
+    left: 68%;
+    top: 70px;
+    border-radius: 50px;
+    text-align: center;
+    border: 6px solid #fafafa;
+    box-shadow: 10px 15px 18px #000000;
+    background-image: url(images/display.webp);
+}
+.card2 h2{
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #7fc142;
+    width: 50%;
+    border-radius: 100px;
+    position: relative;
+    left: 25%;
+    top: 0px;
+}
+.card2 table{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 550;
+}
+.card3{
+    width: 9px;
+    height: 20vh;
+    background-color: black;
+    position: relative;
+    top: -600px;
+    left: 67.5%;
+    border-radius: 40px;
+}
+.card4{
+    width: 9px;
+    height: 10vh;
+    background-color: black;
+    position: relative;
+    top: -570px;
+    left: 67.5%;
+    border-radius: 40px;
+}
+.totalPay{
+    font-size: 25px;
+    position: relative;
+    left: 8%;
+}
+.selectedTic th{
+    position: relative;
+    padding-right: 60px;
+    padding-left: 10px;
+    left: 5%;
+    top: 5px;
+}
+.tuk th{
+    padding: 10px;
+}
+.tuk td{
+    padding: 10px;
+    display: flex;
+    width: 180%;
+}
+.tet td{
+   padding-top: 30px;
+   position: relative;
+   left: 2%;
+}
+.card6{
+    width: 55%;
+    height: 60vh;
+    position: relative;
+    color: whitesmoke;
+    left: 5%;
+    top: -750px;
+    border-radius: 50px;
+    text-align: center;
+    border: 6px solid #ffffff;
+    background-image: url(images/black.jpg);
+}
+.card6 h2{
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: #7fc142;
+    width: 90%;
+    border-radius: 100px;
+    position: relative;
+    left: 5%;
+    padding: 3px;
+}
+.card6 table th{
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    left: 5%;
+    top: 5px;
+}
+.tit th{
+    background-color: #7fc142;
+    border-radius: 10px;
+}
+.card6 table td{
+    font-size: 20px;
+    padding-right: 150px;
+    position: relative;
+    left: 15%;
+    top: 5px;
+}
+.finish{
+    font-size: 40px;
+    font-family:cursive; 
+    position: relative;
+    left: 3%;
+    top: 5px;
+    font-weight: 600;
+}
+.card7{
+    width: 20vh;
+    height: 9px;
+    background-color: black;
+    position: relative;
+    top: -750px;
+    left: 10%;
+    border-radius: 40px;
+}
+.card8{
+    width: 10vh;
+    height: 9px;
+    background-color: black;
+    position: relative;
+    top: -760px;
+    left: 23%;
+    border-radius: 40px;
+}
+.con button{
+    background-color: #e76e0b;
+    height: 12vh;
+    border-radius: 100%;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left: 35%;
+}
+
+@media screen and (max-width: 768px){
+    .summary{
+        position: relative;
+        top: 500px;
+        display: grid
+    }.sum1{
+        height: 5vh;
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------details page---------------------------------------------------------------------------- */
+.text img{
+    width: 2%;
+    height: 2%;
+    position: relative;
+}
+.register{
+    background-color: #282834;
+    color: #fff;
+    padding: 0 40px;
+    height: 105vh;
+    position: relative;
+    top: -636px;
+}
+.regi{
+    width: 45%;
+    background-color: #7fc142;
+    padding: 40px;
+    position: relative;
+    top: 50px;
+    border-radius: 40px;
+    height: 90vh;
+}
+.regi input{
+    margin-bottom: 5%;
+    padding: 5px;
+}
+.regi select{
+    width: 100%;
+    padding: 5px;
+}
+.cwp{
+    background-color: #e76e0b;
+    padding: 10px;
+    position: relative;
+    top: 25px; 
+    left: 64%;
+}
+.card1{
+    width: 40%;
+    position: relative;
+    background-color: #e76e0b;
+    height: 90vh;
+    bottom: 600px;
+    left: 55%;
+    display: fixed;
+}
